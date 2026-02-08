@@ -1,5 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+const STAGE_ICONS = {
+    'Shaping': '🌫️',
+    'Discovering': '🔍',
+    'Validating': '🧪',
+    'Scoping': '🎯',
+    'Structuring': '🏗️',
+    'Prioritizing': '⚖️',
+    'Roadmapping': '📅',
+    'Confirming': '✅'
+};
+
 export function ChatInterface({ session, onSendMessage }) {
     const [input, setInput] = useState('');
     const scrollRef = useRef(null);
@@ -25,7 +36,9 @@ export function ChatInterface({ session, onSendMessage }) {
                     <h2 className="session-title">{session.title}</h2>
                     <div className="session-stages">
                         {session.stages.map(stage => (
-                            <span key={stage} className="stage-badge">{stage}</span>
+                            <span key={stage} className="stage-badge">
+                                {STAGE_ICONS[stage]} {stage}
+                            </span>
                         ))}
                     </div>
                 </div>
