@@ -1,26 +1,25 @@
 # Idea to Jira Lifecycle - Session Stages
 
-> Design discussion for NLPM session labeling and workflow
+> Refined lifecycle based on PM frameworks (JTBD, Shaping, Validating)
 
-## Proposed Stages
+## The Action-Oriented Lifecycle
 
-| Stage | Icon | User Enters With... | AI Helps With... | Output |
-|-------|------|---------------------|------------------|--------|
-| **Shaping** | 🌫️ | Vague idea, problem feeling | Asking "why", JTBD framing | Problem statement |
-| **Discovering** | 🔍 | Problem clarity, needs validation | Research questions, assumptions | Research plan |
-| **Scoping** | 🎯 | Validated problem, too big | Simplicity test, MVP definition | Scoped MVP |
-| **Structuring** | 🏗️ | Scoped idea, needs stories | Epics/stories, acceptance criteria | Draft Jira artifacts |
-| **Prioritizing** | ⚖️ | Multiple stories/features | RICE scoring, sequencing | Prioritized backlog |
-| **Confirming** | ✅ | Ready for Jira | Final review, editing | Stories in Jira |
+These stages represent the evolution of a product idea within the NLPM tool.
 
-## Open Questions
+| Stage | Icon | Action Focus | AI Thinking / Challenge |
+|-------|------|--------------|-------------------------|
+| **Shaping** | 🌫️ | Problem Definition | Asking "Why?" and finding the JTBD |
+| **Discovering** | 🔍 | Research & Evidence | Surfacing assumptions and bias |
+| **Validating** | 🧪 | Stress Testing | **Challenge Mode**: Pre-mortem (Why did it fail?) |
+| **Scoping** | 🎯 | Simplicity Forcing | Figma Test: The ONE job that matters |
+| **Structuring** | 🏗️ | Artifact Creation | Breaking into Epics and User Stories |
+| **Prioritizing** | ⚖️ | High-Impact Sequencing | RICE/ICE Scoring & Value vs Effort |
+| **Roadmapping** | 📅 | Visual Timeline | Sequencing for velocity and outcomes |
+| **Confirming** | ✅ | Execution Handoff | Jira/Confluence/Doc Export |
 
-1. **Entry Point Detection** - AI detects vs user selects stage
-2. **Stage Progression** - Stay in stage vs evolve through stages
-3. **Non-Jira Outputs** - What to export from early stages
-4. **Challenging Mode** - Separate stage or mode within any stage?
-5. **Naming Style** - Action verbs vs nouns vs metaphors
+## Key Concepts
 
----
-
-*To be refined based on user feedback*
+- **Multi-Select Entry**: Users choose where they need help most (e.g., "I need help with Shaping and Validating").
+- **Hybrid Progression**: Sessions can move between stages as the idea matures.
+- **Challenge Mode**: Integrated into the Validating stage to stress-test ideas before execution.
+- **Dual Export**: Support for Jira/Confluence (tactical) and Word/Google Docs (reporting/artifacts).
